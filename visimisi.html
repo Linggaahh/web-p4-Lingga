@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id" translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lingga Hilal Arsenio">
+    <title>Visi dan Misi P4 Jakarta</title>
+    <!-- TailwindCSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+          .btn-purple {
+  background-color: #6a0dad; /* Purple color */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #8a2be2; /* Lighter purple color when hovered */
+}
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-purple-600 text-white text-center py-6">
+        <h1 class="text-4xl font-semibold">Visi dan Misi P4 Jakarta</h1>
+        <p class="text-lg mt-2">Mewujudkan pendidikan yang unggul, berkarakter, dan berkualitas</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-8">
+
+        <!-- Visi Section -->
+        <section class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-3xl font-semibold text-purple-600 mb-4">Visi</h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Mewujudkan pelatihan dan pengembangan pendidikan yang unggul, berkarakter dan berkualitas.
+            </p>
+        </section>
+
+        <!-- Misi Section -->
+        <section class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-3xl font-semibold text-purple-600 mb-4">Misi</h2>
+            <ul class="list-decimal list-inside text-gray-700 text-lg space-y-4">
+                <li>Merancang materi kurikulum peningkatan kompetensi kepala sekolah, kepala tata usaha, wakil kepala sekolah, pendidik, tenaga kependidikan dan peserta didik kekjuruan sesuai kebutuhan.</li>
+                <li>Melaksanakan pelatihan yang kekinian dan berkualitas tinggi, merata dan berkelanjutan.</li>
+                <li>Meningkatkan kompetensikepala sekolah, kepala tata usaha, wakil kepala sekolah, pendidik, tenaga kependidikan pada semua jenjang secara berkelanjutan.</li>
+                <li>Meningkatkan kompetensi peserta didik kejuruan secara berkelanjutan.</li>
+                <li>Melaksanakan monitoring dan evaluasi secara berkala.</li>
+            </ul>
+        </section>
+
+        <!-- Button to Show Misi Details -->
+        <button id="misiBtn" class="mt-6 py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition duration-300 ease-in-out">
+            Tampilkan Misi Detail
+        </button>
+        <div class="container text-center mt-5">
+          <a href="index.html" class="btn btn-purple">KEMBALI</a>
+      </div>
+
+        <!-- JavaScript to handle button click -->
+        <div id="misiDetails" class="mt-4 hidden bg-white shadow-lg p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-purple-600 mb-4">Misi Detail</h3>
+            <p class="text-gray-700">
+                Setiap misi memiliki tujuan untuk memperkuat sistem pendidikan di Jakarta dengan pembaruan yang berkelanjutan
+                dan berorientasi pada kualitas yang lebih tinggi untuk mendukung para pendidik, tenaga kependidikan, dan peserta didik.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        const misiBtn = document.getElementById("misiBtn");
+        const misiDetails = document.getElementById("misiDetails");
+
+        misiBtn.addEventListener("click", function() {
+            misiDetails.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>

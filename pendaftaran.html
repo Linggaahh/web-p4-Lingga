@@ -1,0 +1,56 @@
+<!doctype html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lingga Hilal Arsenio">
+    <title>Pendaftaran Pelatihan P4 Jakarta</title>
+    <!-- Flowbite and Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.4.6/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <div class="container mx-auto p-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <h2 class="text-2xl font-semibold text-center text-purple-600 mb-6">Pendaftaran Pelatihan P4 Jakarta</h2>
+            <p class="text-center text-gray-600 mb-6">Isi formulir di bawah ini untuk mendaftar dalam program pelatihan kami.</p>
+
+            <!-- Registration Form -->
+            <form action="#" class="space-y-6">
+                <div class="mb-4">
+                    <label for="nama" class="block text-gray-700 font-semibold">Nama Lengkap</label>
+                    <input type="text" id="nama" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Masukkan email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="telepon" class="block text-gray-700 font-semibold">Nomor Telepon</label>
+                    <input type="tel" id="telepon" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Masukkan nomor telepon" required>
+                </div>
+                <div class="mb-4">
+                    <label for="program" class="block text-gray-700 font-semibold">Program Pelatihan</label>
+                    <select id="program" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <option value="" disabled selected>Pilih program pelatihan</option>
+                        <option value="web_dev">Pengembangan Web</option>
+                        <option value="data_sci">Ilmu Data</option>
+                        <option value="design">Desain Grafis</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-purple-500">Daftar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.4.6/dist/flowbite.min.js"></script>
+</body>
+
+</html>
